@@ -39,6 +39,10 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('Lookup Processable Blobs').output.value",
+						"type": "Expression"
+					},
 					"isSequential": true
 				}
 			}
