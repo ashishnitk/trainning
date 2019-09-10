@@ -53,7 +53,7 @@
 							"typeProperties": {
 								"variableName": "BlobPath",
 								"value": {
-									"value": "@{item().Path}",
+									"value": "@substring(item().path, 0, indexof(item().path, item().BlobName))",
 									"type": "Expression"
 								}
 							}
